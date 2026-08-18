@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Bio Links</title>
+    <!-- Font chữ phong cách đáng yêu từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Phông nền Gradient Pastel phong cách Anime */
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #a1c4fd 100%);
+            background-attachment: fixed;
+            padding: 20px;
+        }
+
+        /* Khung chứa chính */
+        .card-container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(255, 154, 158, 0.3),
+                        0 0 15px rgba(255, 255, 255, 0.8);
+            border: 3px solid #ffffff;
+            position: relative;
+        }
+
+        /* Avatar Anime */
+        .avatar-wrapper {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff758c;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Tên và Mô tả */
+        .name {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.5rem;
+            color: #ff4b2b;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        /* Danh sách Liên kết Social */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Màu sắc riêng cho từng Nền tảng */
+        .facebook {
+            background: linear-gradient(45deg, #1877f2, #00c6ff);
+        }
+
+        .zalo {
+            background: linear-gradient(45deg, #0068ff, #00b4d8);
+        }
+
+        .tiktok {
+            background: linear-gradient(45deg, #000000, #25f4ee, #fe2c55);
+            background-size: 200% 200%;
+        }
+
+        .social-btn i {
+            font-size: 1.3rem;
+        }
+
+        /* Chân trang */
+        .footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Ảnh đại diện -->
+        <div class="avatar-wrapper">
+            <!-- Thay link ảnh avatar anime của bạn vào src bên dưới -->
+            <img class="avatar" src="https://i.pinimg.com/564x/8b/da/ca/8bdaca13d517178cca5e893246473456.jpg" alt="Anime Avatar">
+        </div>
+
+        <!-- Thông tin cá nhân -->
+        <h1 class="name">Tiến  ✨</h1>
+        <p class="bio">Chào mừng bạn đến với thế giới của mình! ♡</p>
+
+        <!-- Các liên kết MXH -->
+        <div class="links-container">
+            <!-- Thay link Facebook của bạn vào href -->
+            <a href="https://www.facebook.com/profile.php?id=100054641812868&mibextid=wwXIfr&rdid=T4Blp5yOjAHDGpvJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F199mZWNBDr%2F%3Fmibextid%3DwwXIfr" target="_blank" class="social-btn facebook">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+
+            <!-- Thay link/SĐT Zalo của bạn vào href -->
+            <a href="https://zalo.me/0392998614" target="_blank" class="social-btn zalo">
+                <i class="fa-solid fa-comment-dots"></i> Zalo Me
+            </a>
+
+            <!-- Thay link TikTok của bạn vào href -->
+            <a href="https://www.tiktok.com/@trantiendatt.official?_r=1&_d=secCgYIASAHKAESPgo8SZ9S5iL2x1mDfPD1MOzNn9kxVIKh%2BpLReHbSRxbUbmt6pKyLI39y6vzrJVW36RjtyFr74uYn0KZap6MgGgA%3D&_svg=1&checksum=9e6fd1e4b33d7f92f7d32b183c92a4649adef8416cef8e2670ce43322959af4c&item_author_type=1&panel_source_v2=share_panel&reflow_sign_scene=7&rgssign=8.1.iMZ8kvdMIitFIgUiGLKO_g&sec_uid=MS4wLjABAAAA5XNeD2KOe4ZakJCSNh6fCqZhjleOM2yWveUR3H6buVfc1c2Kkpgs8OK3yknLlfdp&sec_user_id=MS4wLjABAAAA5XNeD2KOe4ZakJCSNh6fCqZhjleOM2yWveUR3H6buVfc1c2Kkpgs8OK3yknLlfdp&share_app_id=1180&share_author_id=7162510641571628033&share_enter_from=personal_homepage&share_link_id=99F56044-C845-46EC-AC68-266F1A546F3F&share_region=VN&share_scene=1&sharer_language=vi&social_share_type=5&source=h5_t&timestamp=1787018038&tt_from=copy&u_code=e4j5i1hc94dkj8&ug_btm=b8727%2Cb0&user_id=7162510641571628033&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank" class="social-btn tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        </div>
+
+        <div class="footer">
+            Designed with ✨ Anime Style
+        </div>
+    </div>
+
+</body>
+</html>
